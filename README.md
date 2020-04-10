@@ -1,5 +1,5 @@
 # React Phone catalog
-- Replace `<your_account>` with your Github username in the [DEMO LINK](https://mariiafil.github.io/artpix3d/#/order)
+-  [DEMO LINK](https://mariiafil.github.io/artpix3d/#/order)
 
 ## Description
 Implemented layout using React
