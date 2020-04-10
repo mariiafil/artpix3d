@@ -1,0 +1,110 @@
+.menu {
+  width: 320px;
+  padding-top: 100px;
+  position: relative;
+  z-index: 0;  
+
+  &:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    display: block;
+    width: 100%;
+    height: 100%;
+    top: -50px;
+    background: url(../img/pattern.png);
+    opacity: 0.02;
+  }
+}
+
+.user {
+  
+  text-align: center;
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto 45px;
+  align-items: center;
+
+  & img {
+    margin-bottom: 5px;
+  }
+
+  &__name {
+    color: #fff;
+    font-size: 18px;
+    margin: 0 7px 4px;
+  }
+
+  &__position {
+    font-size: 14px;
+    color: $blue_grey;
+    margin: 0;
+    padding-left: 10px;
+  }
+
+  &__info {
+    width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+  }
+
+  &__button {
+    background-color: transparent;
+    background: center;
+    width: 16px;
+    height: 16px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+}
+
+.navigation {
+
+  display: flex;
+  flex-direction: column;
+
+  &__link {
+    color: #fff;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    width: 100%;
+    padding: 23px 0 23px 80px;
+    position: relative;
+    background: url(../img/shopping-bag.png) no-repeat  50px 22px;
+
+    &--active {
+      color: #1e2835;
+      background: #eff3f6 url(../img/bag_active.png) no-repeat 50px 22px;
+
+      &::after {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 86px;
+        height: 86px;
+        bottom: -80px;
+        transform: rotate(-90deg);
+        right: -6px;
+        background-image:
+        radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px); 
+      }
+
+      &::before {
+        content: '';
+        display: block;
+        position: absolute;
+        width: 78px;
+        height: 86px;
+        top: -80px;
+        right: 0;
+        background-image:
+        radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px);
+      }
+    }
+  }  
+}

@@ -1,0 +1,38 @@
+@import "./fonts";
+@import "./vars";
+@import "./header";
+@import "./navigation";
+@import "./orderActions";
+@import "./orderHeader";
+@import "./orderTable";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'OpenSans', sans-serif;
+  margin: 0;
+  background-color: $dark_blue;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.main {
+  background-color: $main_bg;
+  width: 1800px;
+  border-radius: 50px;
+  min-height: 100vh;
+  padding: 30px;
+  position: relative;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  color: $blue_text;
+}

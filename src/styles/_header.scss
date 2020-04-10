@@ -1,0 +1,82 @@
+.header {
+
+  padding: 0 90px;
+  margin-bottom: 20px;
+  height: 90px;
+  display: flex;
+  width: 100%;
+  justify-content: flex-start; 
+  align-items: center;
+
+  &__logo-link {
+    position: relative;
+    z-index: 1;
+    padding-top: 40px;
+    padding-left: 15px;
+    
+    &::before {
+      content: '';
+      display: block;
+      width: 342px;
+      height: 235px;
+      position: absolute;
+      top: 22px;
+      left: -90px;
+      z-index: -1;
+      background: url(../img/bg_object.png) no-repeat;
+    }
+  }
+
+  &__actions {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 170px;
+  }
+
+  &__search {
+    height: 30px;
+    padding-top: 16px;
+    font-size: 14px;
+    color: #fff;
+    padding-left: 40px;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    background: url(../img/magnifying-glass.png) no-repeat 0 12px;
+
+    &::placeholder {
+      font-size: 14px;
+      color: $blue_text;
+    }
+  }
+
+  &__news {
+    width: 25px;
+    height: 25px;
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+
+  &__button-wrapper {
+    position: relative;
+  }
+
+  &__news-number {
+    display: block;
+    width: 20px;
+    height: 20px;
+    background-color: #53a4d3;
+    color: #fff;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 20px;
+    font-size: 12px;
+    position: absolute;
+    top: -5px;
+    right: -15px;
+  }
+}
