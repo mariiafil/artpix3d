@@ -2,10 +2,10 @@
   width: 320px;
   padding-top: 100px;
   position: relative;
-  z-index: 0;  
+  z-index: 0;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
     z-index: -1;
     display: block;
@@ -53,7 +53,6 @@
 
   &__button {
     background-color: transparent;
-    background: center;
     width: 16px;
     height: 16px;
     border: none;
@@ -82,7 +81,7 @@
       background: #eff3f6 url(../img/bag_active.png) no-repeat 50px 22px;
 
       &::after {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 86px;
@@ -90,21 +89,19 @@
         bottom: -80px;
         transform: rotate(-90deg);
         right: -6px;
-        background-image:
-        radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px); 
+        background-image: radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px);
       }
 
       &::before {
-        content: '';
+        content: "";
         display: block;
         position: absolute;
         width: 78px;
         height: 86px;
         top: -80px;
         right: 0;
-        background-image:
-        radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px);
+        background-image: radial-gradient(circle at 12% 12%, rgba(204,0,0,0) 70px, $main_bg 15px);
       }
     }
-  }  
+  }
 }

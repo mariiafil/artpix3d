@@ -5,7 +5,7 @@
   height: 90px;
   display: flex;
   width: 100%;
-  justify-content: flex-start; 
+  justify-content: flex-start;
   align-items: center;
 
   &__logo-link {
@@ -15,7 +15,7 @@
     padding-left: 15px;
     
     &::before {
-      content: '';
+      content: "";
       display: block;
       width: 342px;
       height: 235px;
@@ -42,9 +42,8 @@
     color: #fff;
     padding-left: 40px;
     border: none;
-    background-color: transparent;
     outline: none;
-    background: url(../img/magnifying-glass.png) no-repeat 0 12px;
+    background: url(../img/magnifying-glass.png) transparent no-repeat 0 12px;
 
     &::placeholder {
       font-size: 14px;

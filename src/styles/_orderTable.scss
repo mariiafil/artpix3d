@@ -30,12 +30,10 @@
     margin-right: 15px;
     display: block;
     cursor: pointer;
-    position: relative;
-    display: block;
     position: absolute;
 
     & input:checked ~ .table__checkmark {
-      background: url('../img//checked.png') no-repeat center;
+      background: url("../img//checked.png") no-repeat center;
       background-size: contain;
     }
   }
@@ -53,14 +51,13 @@
   &__item-photo {
     display: flex;
     align-items: center;
-    width: 100px;
     width: 110px;
     padding-left: 30px;
 
     & .table__paragraph {
       margin-left: 40px;
     }
-  }  
+  }
 
   &__photos {
     display: flex;
@@ -90,7 +87,7 @@
   }
 
   &__item-shape {
-    width: 100px
+    width: 100px;
   }
 
   &__item-name {

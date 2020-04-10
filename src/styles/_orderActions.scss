@@ -31,7 +31,7 @@
     position: relative;
 
     @mixin circle {
-      content: '';
+      content: "";
       display: block;
       position: absolute;
       width: 10px;
@@ -44,7 +44,7 @@
 
     &--work::before {
       @include circle;
-      background-color: $pink;      
+      background-color: $pink;
     }
 
     &--ready::before {
