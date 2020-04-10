@@ -1,51 +1,13 @@
-.order {
+.table-header {
+  padding-right: 11%;
 
-  &__header {
-    font-size: 14px;
-    color: $dark_blue;
-    display: flex;
-    justify-content: space-between;
-    width: 1230px;
-    margin-left: 170px;
-    margin-bottom: 20px;
-  }
-
-  &__header-item {
-    display: block;
-    list-style: none;
-    text-align: left;
-  }
-
-  &__header-shape {
-    width: 120px;
-  }
-
-  &__header-unit {
-    width: 280px;
-  }
-
-  &__header-date {
-    width: 100px;
-  }
-
-  &__header-product {
-    width: 140px;
-  }
-
-  &__header-status {
-    width: 120px;
-  }
-
-  &__header-total {
-    width: 80px;
-  }
-  &__header-comment {
-    width: 120px;
-  }
-
-  &__header-item:nth-child(1) {
+  & .table__item:nth-child(2) {
     font-weight: bold;
+    display: flex;
   }
+}
+
+.order {
 
   &__header-button {
     background-color: transparent;

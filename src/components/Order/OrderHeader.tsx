@@ -2,9 +2,10 @@ import React from 'react';
 
 export const OrderHeader = () => {
   return (
-    <ul className="order__header">
-      <li className="order__header-item order__header-product">
-          Product Name
+    <ul className="table table-header">
+      <li className="table__item table__item-photo" />
+      <li className="table__item table__item-number">
+        Product Name
         <button
           className="order__header-button"
           type="button"
@@ -12,23 +13,23 @@ export const OrderHeader = () => {
           <img src="img/sort.png" alt="sort" />
         </button>
       </li>
-      <li className="order__header-item order__header-shape">
-          Shape
+      <li className="table__item table__item-shape">
+        Shape
       </li>
-      <li className="order__header-item order__header-unit">
-          Unit Price
+      <li className="table__item table__item-name">
+        UnitPrice
       </li>
-      <li className="order__header-item order__header-date">
-          Date
+      <li className="table__item table__item-date">
+        Date
       </li>
-      <li className="order__header-item order__header-total">
-          Subtotal
+      <li className="table__item table__item-total">
+        Subtotal
       </li>
-      <li className="order__header-item order__header-comment">
-          Comment
+      <li className="table__item table__item-comments">
+        Comment
       </li>
-      <li className="order__header-item order__header-status">
-          Status
+      <li className="table__item table__item-status">
+        Status
       </li>
     </ul>
   );
